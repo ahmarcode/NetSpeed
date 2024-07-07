@@ -4,12 +4,13 @@ import React, { useState } from 'react';
 const SpeedTest = () => {
     const [downloadSpeed, setDownloadSpeed] = useState(null);
     const imageUrl = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/"; // Proxy URL to avoid CORS issues
     const fileSizeInBytes = 147917; // Size of the image file in bytes (approximately)
 
     const startDownloadTest = () => {
         const startTime = performance.now();
 
-        fetch(imageUrl)
+        fetch(proxyUrl + imageUrl)
             .then(response => {
                 const endTime = performance.now();
                 const durationInSeconds = (endTime - startTime) / 1000;
