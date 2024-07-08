@@ -25,7 +25,7 @@ const SpeedTest = () => {
     };
 
     return (
-        <div className='container font- flex flex-col place-items-center'>
+        <div className='container font-mono flex flex-col place-items-center'>
             <div className='text-6xl p-5 mt-[5%] block mx-4 px-4 py-2.5 rounded leading-none font-medium bg-white text-black'>NetSpeed</div>
             <div className='text-6xl p-5 mt-[2%]'>Internet Speed Test</div>
             <button className='flex place-items-center' onClick={startDownloadTest}>Click to Test</button>
