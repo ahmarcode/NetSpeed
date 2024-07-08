@@ -25,11 +25,11 @@ const SpeedTest = () => {
     };
 
     return (
-        <div>
-            <h1>Internet Speed Test</h1>
-            <button onClick={startDownloadTest}>Start Download Test</button>
+        <div className='container font- flex flex-col place-items-center'>
+            <div className='text-6xl p-5 mt-[10%]'>Internet Speed Test</div>
+            <button className='flex place-items-center' onClick={startDownloadTest}>Click to Test</button>
             {downloadSpeed !== null && (
-                <div>
+                <div className='text-3xl mt-[5%]'>
                     <p>Download Speed: {downloadSpeed} Mbps</p>
                 </div>
             )}
