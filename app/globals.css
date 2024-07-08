@@ -45,7 +45,6 @@ button:focus {
 
 .loader {
   display: flex;
-  margin-top: 10%;
   position: relative;
   width: 75px;
   height: 100px;

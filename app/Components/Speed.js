@@ -57,7 +57,7 @@ const SpeedTest = () => {
                 <button className='flex place-items-center' onClick={startDownloadTest}>{msg}</button>
             )}
             {end ? (
-                <div className="absolute bottom-[15%] text-3xl mt-[5%]">
+                <div className="absolute bottom-[15%] p-2 text-2xl mt-[5%]">
                     <p>Download Speed: {downloadSpeed} Mbps</p>
                 </div>
             ) : (
