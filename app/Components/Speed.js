@@ -42,8 +42,8 @@ const SpeedTest = () => {
 
     return (
         <div className='container font-mono flex flex-col place-items-center'>
-            <div className='text-6xl font-bold italic p-5 mt-[5%] block mx-4 px-4 py-2.5 rounded leading-none font-medium bg-white text-black'>NetSpeed</div>
-            <div className='text-6xl p-5 mt-[2%]'>Internet Speed Test</div>
+            <div className='text-5xl font-bold italic p-5 mt-5 block mx-4 px-4 py-2.5 rounded leading-none font-medium bg-white text-black'>NetSpeed</div>
+            <div className='text-4xl p-4 mt-[2%]'>Internet Speed Test</div>
             {loading ? (
                 <div class="loader">
                 <div class="loader__bar"></div>
@@ -57,7 +57,7 @@ const SpeedTest = () => {
                 <button className='flex place-items-center' onClick={startDownloadTest}>{msg}</button>
             )}
             {end ? (
-                    <p className='p-2 text-2xl mt-[15%]'>Download Speed: {downloadSpeed} Mbps</p>
+                    <p className='p-2 text-2xl mt-32'>Download Speed: {downloadSpeed} Mbps</p>
             ) : (
                 <div></div>
             )}
